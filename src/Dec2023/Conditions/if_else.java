@@ -44,5 +44,24 @@ public class if_else {
         }
 
 
+        Scanner Sc = new Scanner(System.in);
+        System.out.println("enter 3 sides of triangle");
+        int side1 =Sc.nextInt();
+        int side2 =Sc.nextInt();
+        int side3 =Sc.nextInt();
+
+        if ((side1 == side2) && (side2 == side3) && (side3==side1)){
+            System.out.println("Equilateral triangle");
+        } else if (side1 == side2 || side1 == side3 || side2 == side3) {
+            System.out.println("Isosceles triangle");
+        } else {
+            System.out.println("Scalene triangle");
+        }
+
+
+
+
+
+
     }
 }
